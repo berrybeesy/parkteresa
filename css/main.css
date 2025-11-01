@@ -1,0 +1,189 @@
+html{font-family:'Noto Sans JP', sans-serif;background-color: #f5f5f5; scroll-behavior: smooth; scroll-padding-top: 200px; color: #1a1a1a; font-size: 15px; overflow-x: hidden;}
+html{ user-select: none !important; -webkit-user-select: none !important; -ms-user-select: none !important; -webkit-touch-callout: none !important;}
+h2 {font-family: 'Bebas Neue', sans-serif; font-size: 48px;}
+.news-title, .project-title, .contact-title{margin: 150px 60px;}
+.copy-title {margin: 250px 60px;}
+header {width: 100%; padding: 20px 0; position: fixed; z-index: 4;
+        background-color: #f5f5f5; border-bottom: 3px solid #1a1a1a;
+        display: flex; justify-content: space-between; align-items: center;}
+header div{display: flex; flex-direction: column; margin-left: 60px;}
+header .logo{font-size: 22px; line-height: normal; font-weight: 400; color: #E98E3F;}
+header .contact{display: flex; flex-wrap: wrap; row-gap: 8px; column-gap: 40px; font-size: 16px; line-height: 24px;}
+header .contact .label{border-bottom: 1.5px solid #1a1a1a; margin-right: 20px;}
+.label{border-bottom: 1.5px solid #1a1a1a;}
+header .contact li:first-child{flex-basis: 100%;}
+header .contact li a{color: inherit;}
+header nav ul{display: flex; font-size: 20px; line-height: 28px; gap: 30px; margin-right: 50px;}
+nav li a{ display:inline-flex; align-items:center;}
+/* Header fin. */
+.z1{z-index: 1;}
+.z2{z-index: 2;}
+.z3{z-index: 3;}
+
+.title {display: flex; overflow: hidden; height: 100vh; justify-content: center; align-items: center;}
+.title-box {display: flex; overflow-x: hidden; overflow-y: hidden; margin-top: 140px;}
+.title-box:first-of-type { padding-left:80px;}
+.title-box:last-of-type  { padding-right:80px;}
+.svg-container {width: 10vw; height: 100%;}
+.svg-content-responsive {width: 100%; height: 60vh;}
+.people {position: absolute; bottom: 0; right: -20vw; margin-bottom: 100px; height: 40vh; 
+        -webkit-animation: translateinfinitem 15s linear infinite; 
+        animation: translateinfinitem 15s linear infinite;}
+.blue {animation-delay: 1s;}
+.green {animation-delay: 4s;}
+.orange {animation-delay: 7s;}
+.pink{animation-delay: 10s;}
+.yellow {animation-delay: 13s;}
+@keyframes translateinfinitem {100% {transform: translateX(calc(-300px * 7));}}
+@-webkit-keyframes translateinfinitem {100% { transform: translateX(calc(-300px * 7));}}
+/* title fin. */
+.news-title {display: flex; align-items: start; justify-content: space-between; gap: 10rem;}
+.card-container{display: flex; flex-direction: column; gap: 6rem; padding-bottom: 50px; border-bottom: 1px solid #c5c5c5;}
+.container-bottom,
+.container-top{display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;}
+.container-top img{ width: 100%; height: 100%; aspect-ratio: 16/9;}
+
+.news-card {position: relative; aspect-ratio: 16 / 9; overflow: hidden;}
+.overlay {position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 24px;  background-color: #1a1a1a;}
+.overlay > *:first-child{padding-bottom: 30px;}
+.overlay > * {color: #ffffff; padding-bottom: 10px;}
+.text-yellow{color: #FFE600;}
+.text-green{color: #00CE3B;}
+.text-blue{color: #2194FF;}
+.container-bottom ul li{display: flex; margin-bottom: 14px; color: #999;}
+.container-bottom ul li:first-child{ font-weight: 500;}
+/* news fin. */
+.copy-title h2:first-child{text-align: left;}
+.copy-title h2:last-child{text-align: right;}
+/* copy-title Fin. */
+.sans{font-family:'Noto Sans JP', sans-serif; font-size: 20px; margin-left: 20px;}
+.project-title{margin-bottom: 50px;}
+.item-container{display: flex; flex-wrap: wrap; border-top: 1px solid #c5c5c5;}
+.item-container img{width: 50%; height: 50%; object-fit: contain;}
+.item-container > a {flex: 0 0 calc(100% / 3); aspect-ratio: 1 / 1;; 
+                        display: flex; flex-direction: column; justify-content: center; align-items: center;
+                        border-right: 1px solid #c5c5c5; border-bottom: 1px solid #c5c5c5; position: relative; overflow: hidden;}
+.item-container > a p{margin-top: 2.5rem;}
+.item-container > a span{color: #999; margin-top: 1rem;}
+.corner-box{position: absolute; right: 0; bottom: 0; width: 40px; height: 40px; background-color: #e7e7e7;}
+.corner-icon{position:absolute; right: 4px; bottom: 4px; width: 32px; height: 32px;}
+/* Projects Fin. */
+
+.contact-title{margin-top: 250px; margin-bottom: 250px;}
+.contact-title form{margin-top: 30px; display: flex; justify-content: space-between;}
+.contact-title form label{display: none;}
+.contact-title form input,
+.contact-title form button{border: 1px solid #1a1a1a; height: 80px; -webkit-appearance: none; appearance: none; outline: none;}
+.contact-title form button:hover{cursor: pointer;}
+.contact-title form input {width: 90%; font-size: 20px; padding: 0 20px; background-color: #f5f5f5; margin-right: 1rem; }
+.contact-title form button {width: 110px; background-color: #f5f5f5; font-size: 20px;}
+
+.contact-title .message-form input:focus,
+.contact-title .message-form input:active,
+.contact-title .message-form input:focus-visible {outline: none;}
+/* contact fin. */
+
+.footer-minimized{display: none;}
+
+footer {border-top: 3px solid #1a1a1a; width: 100%; display: flex; align-items: center;}
+footer > a{width: 30%; text-align: center; border-left: 2px solid #1a1a1a; padding: 24px 0; font-size: 36px;}
+.footer-container{width: 70%; display: flex; justify-content: space-between; padding: 0 60px;}
+.footer-items{display: flex; gap: 20px; font-size: 20px;}
+/* Footer fin. */
+
+
+@media (max-width: 1280px){
+        .title{flex-direction: column; gap: 20px;}
+        .title-box{margin: 0;}
+        .title-box:first-of-type { padding-left:0px; margin-top: 140px;}
+        .title-box:last-of-type  { padding-right:0px;}
+        .svg-container {width: 15vw; height: 35vh;}
+        .svg-content-responsive {width: 15vw; height: 35vh; aspect-ratio: none;}
+        .people{margin-bottom: 50px; right: -50vw;}
+}
+
+@media (max-width: 1300px){
+        .news-title {flex-direction: column; gap: 50px;}
+}
+
+@media (max-width: 900px){
+        header{justify-content: center;}
+        header > nav, 
+        header div ul li {display: none;}
+        header div{ margin-left: 0px;}
+        .footer-items {display: none;}
+        footer > a{width: 80%;}
+        .item-container{flex-direction: column;}
+        .container-top {grid-template-columns: repeat(2, minmax(0, 1fr));}
+        .container-bottom {display: none;}
+        .title-box:first-of-type {margin-top: 80px;}
+        .people {margin-bottom: 80px; right: -50vw;}
+        .footer-minimized{display: block; border-top: 3px solid #1a1a1a; width: 100%;}
+        .mini-items{display: flex; gap: 20px; font-size: 20px; padding: 24px 0; justify-content: center;}
+}
+
+@media  (max-width: 744px){
+        .contact-title form {flex-direction: column; gap: 5rem;}
+        .contact-title form input,
+        .contact-title form button {width: 100%;}
+        .contact-title form button {border: none; border-bottom: 3px solid #1a1a1a;}
+}
+
+@media (max-width: 650px){
+        .container-top {grid-template-columns: repeat(1, minmax(0, 1fr));}
+}
+
+.corner-icon, .corner-box { pointer-events: none; }
+
+#pdfModal.modal{
+        position: fixed !important;
+        inset: 0 !important;
+        display: none !important;
+        align-items: center; justify-content: center;
+        background: rgba(0,0,0,.75);    
+        z-index: 10000 !important;
+        padding: 0; 
+      }
+      #pdfModal.modal.is-open{ display:flex !important; }
+      
+      #pdfModal .modal__panel{
+        width: 100vh;
+        height: 100vh;
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 24px 80px rgba(0,0,0,.45);
+      }
+      
+      #pdfModal .modal__frame{
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+        background: #f6f6f6;
+      }
+      
+      #pdfModal .modal__close{
+        position: fixed;    
+        top: 18px;
+        right: 18px;
+        width: 36px; height: 36px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(255,255,255,.92);
+        box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        font-size: 18px; line-height: 36px;
+        cursor: pointer;
+      }
+      #pdfModal .modal__close:hover{ background:#fff }
+      
+      #pdfModal .modal__fallback{ display:none; }
+      #pdfModal.modal.modal--fallback .modal__fallback{ display:block; }
+      
+      .body-lock{ overflow:hidden; }
+      
+      @media (max-width: 640px){
+        #pdfModal .modal__panel{ width: 100vw; height: 100vh; border-radius: 0; }
+        #pdfModal .modal__close{ top: 12px; right: 12px; }
+      }
+      
