@@ -118,17 +118,10 @@ footer > a{width: 30%; text-align: center; border-left: 3px solid #1a1a1a; paddi
         #header-anchor .main-panel, 
         #header-anchor p {display: none;}
 
-        
         #header-anchor .menu-drop {display: flex; width: 100%; padding: 0 50px;}
-        #header-anchor .menu-drop > ul {display: flex; flex-direction: column; width: 100%; font-size: 26px;}
+        #header-anchor .menu-drop > ul {display: flex; flex-direction: column; width: 100%; font-size: 26px; font-weight: 600;}
         #header-anchor .menu-drop > ul li a{display: block; width: 100%; border-bottom: 3px solid #1a1a1a; padding: 20px 0;}
         #header-anchor .menu-drop > ul li:first-child{border-top: 3px solid #1a1a1a;}
-
-
-
-
-
-
 
         .footer-items {display: none;}
         .item-container{flex-direction: column;}
@@ -141,7 +134,7 @@ footer > a{width: 30%; text-align: center; border-left: 3px solid #1a1a1a; paddi
         .footer-container{position: fixed; bottom: 0; background-color: #f5f5f5; z-index: 4;}
         .mini {width: 100%; height: 80px; display: flex; justify-content: center; align-items: center;}     
         .mini .first{ border-right: 3px solid #1a1a1a; width: 80%; font-size: 24px; font-weight: 600;}
-        .mini .first a{display: inline-flex; justify-content: center; align-items: center; gap: 1rem; width: 100%; height: 100%;}
+        .mini .first a{display: inline-flex; justify-content: center; align-items: center; gap: .5rem; width: 100%; height: 100%;}
         .mini .second{width: 20%; position: relative;}
         .mini .second > a {position: relative; z-index: 1; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
         .mini .second img{display: block; transition: 100ms ease;}

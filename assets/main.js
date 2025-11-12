@@ -4,10 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuBtn = document.getElementById('menuBtn');
   const header  = document.getElementById('header-anchor');
+  const menuIcon = document.getElementById('menuIcon');
+  const menuText = document.querySelector('.menu-label');
 
   menuBtn.addEventListener('click', (e)=>{
     e.preventDefault();                  
     header.classList.toggle('expanded'); 
+    const isOpen = header.classList.contains('expanded');
+    // 접근성 상태 업데이트
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+
+    // 아이콘/텍스트 스왑
+    menuIcon.src = isOpen ? 'assets/icon_close.svg' : 'assets/icon_menu.svg';
+    menuIcon.alt = isOpen ? 'Close menu' : 'Open menu';
+    menuText.textContent = isOpen ? 'CLOSE' : 'MENU';
+  });
+
+  document.querySelector('#header-anchor').addEventListener('click', (e)=>{
+    if (e.target.closest('.menu-drop a')) {
+      document.querySelector('#header-anchor').classList.remove('expanded');
+    }
   });
 
   const modal   = document.getElementById('pdfModal');
