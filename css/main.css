@@ -26,7 +26,7 @@ h2 {font-family: 'Bebas Neue', sans-serif; font-size: 48px;}
 .title-box:last-of-type  { padding-right:80px;}
 .svg-container {width: 10vw; height: 100%;}
 .svg-content-responsive {width: 100%; height: 60vh;}
-.people {position: absolute; bottom: 0; right: -20vw; margin-bottom: 110px; height: 40vh; 
+/* .people {position: absolute; bottom: 0; right: -20vw; margin-bottom: 110px; height: 40vh; 
         -webkit-animation: translateinfinitem 5s linear infinite; 
         animation: translateinfinitem 15s linear infinite;}
 .blue {animation-delay: 1s;}
@@ -35,7 +35,7 @@ h2 {font-family: 'Bebas Neue', sans-serif; font-size: 48px;}
 .pink{animation-delay: 10s;}
 .yellow {animation-delay: 13s;}
 @keyframes translateinfinitem {100% {transform: translateX(calc(-300px * 7));}}
-@-webkit-keyframes translateinfinitem {100% { transform: translateX(calc(-300px * 7));}}
+@-webkit-keyframes translateinfinitem {100% { transform: translateX(calc(-300px * 7));}} */
 /* title fin. */
 .news-title {display: flex; align-items: start; justify-content: space-between; gap: 10rem;}
 .card-container{display: flex; flex-direction: column; gap: 6rem; padding-bottom: 50px; border-bottom: 1px solid #c5c5c5;}
