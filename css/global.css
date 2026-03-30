@@ -1,28 +1,68 @@
-@media screen and (max-width: 767px) and (orientation: landscape){
+/* @media screen and (max-width: 767px) and (orientation: landscape){
 
 }
-
 
 @media screen and (max-width: 767px) and (orientation: portrait){
 
 }
-/* ? mobile Device - ì‚¬ìš©ìžì˜ í•´ìƒë„ê°€ 767pxì´í•˜ ì¼ ë•Œ ì„¸ë¡œ mode*/
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
 
 }
-/* ? tablet Device - ì‚¬ìš©ìžì˜ í•´ìƒë„ê°€ 768px ì´ìƒ / 1279pxë¯¸ë§Œ ì¼ ë•Œ ê°€ë¡œ mode*/
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
   
 }
-/* ? tablet Device - ì‚¬ìš©ìžì˜ í•´ìƒë„ê°€ 768px ì´ìƒ / 1279pxë¯¸ë§Œ ì¼ ë•Œ ì„¸ë¡œ mode*/
-/* ! 768 ~ 1279 : ëª‡ëª‡ë‚˜ë¼ì˜ í•œí•˜ì—¬ ì„¤ì •ë˜ëŠ” ë²”ìœ„ */
 
 @media screen and (min-width: 1280px){
 
+} */
+
+@media (max-width: 1000px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - 40px);
+  }
+
+  .title-box {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    padding: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .svg-container {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    padding: 0 8px;
+  }
+
+  .svg-content-responsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .people{
+    position: absolute;
+    width: 80vw;
+    bottom: -20px;
+  }
+
 }
-/* ? desktop Device - ì‚¬ìš©ìžì˜ í•´ìƒë„ê°€ 1280px ì´ìƒ ì¼ ë•Œ */
-/* 
-    ? M(edia)/Q(uery) : í™”ë©´ì˜ í¬ê¸°(viewPort : browser(scrollW ë“± ì œì™¸. ì˜¨ì „ížˆ bodyë¶€ë¶„))ë¥¼ ê°ì§€í•˜ëŠ” ì½”ë“œ
-*/
+
+@media (max-width: 700px){
+  .people{
+    position: absolute;
+    width: 110vw;
+    bottom: 0px;
+  }
+
+}
